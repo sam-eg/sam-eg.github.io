@@ -6,7 +6,7 @@
                 display: flex;
             }
             .col {
-                flex: 50%;
+                flex: 45%;
             }
             h1 {
                 text-align:center;
@@ -18,10 +18,24 @@
             img {
                 text-align:center;
             }
+            h3 {
+                text-align:right;
+            }
+            .gutter {
+                flex: 10%;
+            }
+            li {
+                margin-bottom:10px;
+            }
+            hr {
+                margin-top:40px;
+                margin-bottom:40px;
+            }
         </style>
     </head>
     <body>
         <h1>CHack</h1>
+        <h3>Back to <a href="index.html" >Sam Evans-Golden's Portfolio</a></h3>
         <p>CHack is an ascii dungeon crawler in the style of the original Rogue or Nethack.</p>
         <ul>
             <li>You control the @ symbol that moves with the arrow keys.</li>
@@ -31,6 +45,7 @@
             <div class="col">
                 <img src="open_door.gif" />
             </div>
+            <div class="gutter"></div>
             <div class="col">
                 <ul>
                     <li>All items and enemies are symbols that look like what they represent, if possible. Keys are F, coins are o, and the ending flag is P.</li>
@@ -44,9 +59,10 @@
             <div class="col">
                 <ul>
                     <li>There are three enemies to contend with. X is a stationary trap, B is a Bouncer that moves in a straight line and bounces off of walls, and R is a randomly moving enemy (definitely the most dangerous). Contact with any of them is an immediate loss.</li>
-                    <li>The player picks up a coin, but dies to a Bouncer when moving down.</li>
+                    <li>Here we see the player pick up a coin, but die to a Bouncer when moving down.</li>
                 </ul>
             </div>
+            <div class="gutter"></div>
             <div class="col">
                 <img src="die.gif" />
             </div>
@@ -56,6 +72,7 @@
             <div class="col">
                 <img src="win.gif" />
             </div>
+            <div class="gutter"></div>
             <div class="col">
                 <ul>
                     <li>Built in C++, with the Curses library to display ascii to the console.</li>

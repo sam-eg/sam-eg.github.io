@@ -6,7 +6,7 @@
                 display: flex;
             }
             .col {
-                flex: 50%;
+                flex: 45%;
             }
             h1 {
                 text-align:center;
@@ -18,19 +18,34 @@
             img {
                 text-align:center;
             }
+            h3 {
+                text-align:right;
+            }
+            .gutter {
+                flex: 10%;
+            }
+            li {
+                margin-bottom:10px;
+            }
+            hr {
+                margin-top:40px;
+                margin-bottom:40px;
+            }
         </style>
     </head>
     <body>
         <h1>Tilty</h1>
+        <h3>Back to <a href="index.html" >Sam Evans-Golden's Portfolio</a></h3>
         <p>Tilty is a game about keeping a rolling ball on a tilting platform.</p>
         <ul>
             <li>You control a ball on a tilting circular platform.</li>
-            <li>At a steady rate, larger and heavier balls fall from above and impact the platform, causing it to tilt in unexpected ways. You have to stay on the platform.</li>
+            <li>At a steady rate, larger and heavier balls fall from above and impact the platform, causing it to tilt in unexpected ways.</li>
         </ul>
         <div class="row">
             <div class="col">
                 <img src="start.gif" />
             </div>
+            <div class="gutter"></div>
             <div class="col">
                 <ul>
                     <li>You score points per larger ball that falls off the platform, and the game ends when you fall off the platform.</li>
@@ -46,6 +61,7 @@
                     <li>Built as a solo project in October of 2023. I wanted to explore the Unity physics engine a bit more than tutorial projects allowed, as well as figure out how to customize the hinge that allows the platform free motion on all axes without moving.</li>
                 </ul>
             </div>
+            <div class="gutter"></div>
             <div class="col">
                 <img src="end.gif" />
             </div>
