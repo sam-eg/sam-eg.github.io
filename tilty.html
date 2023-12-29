@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .row {
+                display: flex;
+            }
+            .col {
+                flex: 50%;
+            }
+            h1 {
+                text-align:center;
+            }
+            body {
+                margin-left: 30px;
+                margin-right: 30px;
+            }
+            img {
+                text-align:center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Tilty</h1>
+        <p>Tilty is a game about keeping a rolling ball on a tilting platform.</p>
+        <ul>
+            <li>You control a ball on a tilting circular platform.</li>
+            <li>At a steady rate, larger and heavier balls fall from above and impact the platform, causing it to tilt in unexpected ways. You have to stay on the platform.</li>
+        </ul>
+        <div class="row">
+            <div class="col">
+                <img src="start.gif" />
+            </div>
+            <div class="col">
+                <ul>
+                    <li>You score points per larger ball that falls off the platform, and the game ends when you fall off the platform.</li>
+                    <li>The player controls are deceptively strange. The left and right arrows merely pivot the camera around the center of the platform, while the up and down arrows roll the ball in directions aligned with the camera.</li>
+                </ul>
+            </div>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col">
+                <ul>
+                    <li>Built in Unity. The platform is actually hinged to a small pivot underneath, everything else uses the native physics engine.</li>
+                    <li>Built as a solo project in October of 2023. I wanted to explore the Unity physics engine a bit more than tutorial projects allowed, as well as figure out how to customize the hinge that allows the platform free motion on all axes without moving.</li>
+                </ul>
+            </div>
+            <div class="col">
+                <img src="end.gif" />
+            </div>
+        </div>
+        <hr />
+        <ul>
+            <li><a href="https://play.unity.com/mg/other/webgl-builds-383884" target="_blank">Play Tilty online here</a></li>
+        </ul>
+    </body>
+</html>

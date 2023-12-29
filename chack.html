@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .row {
+                display: flex;
+            }
+            .col {
+                flex: 50%;
+            }
+            h1 {
+                text-align:center;
+            }
+            body {
+                margin-left: 30px;
+                margin-right: 30px;
+            }
+            img {
+                text-align:center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>CHack</h1>
+        <p>CHack is an ascii dungeon crawler in the style of the original Rogue or Nethack.</p>
+        <ul>
+            <li>You control the @ symbol that moves with the arrow keys.</li>
+            <li>Your goal is to get to the ending flag, and optionally collect coins along the way.</li>
+        </ul>
+        <div class="row">
+            <div class="col">
+                <img src="open_door.gif" />
+            </div>
+            <div class="col">
+                <ul>
+                    <li>All items and enemies are symbols that look like what they represent, if possible. Keys are F, coins are o, and the ending flag is P.</li>
+                    <li>Here we see the player pick up a coin, then a key, and open a door.</li>
+                    <li>The level is only visible within a certain distance of the character.</li>
+                </ul>
+            </div>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col">
+                <ul>
+                    <li>There are three enemies to contend with. X is a stationary trap, B is a Bouncer that moves in a straight line and bounces off of walls, and R is a randomly moving enemy (definitely the most dangerous). Contact with any of them is an immediate loss.</li>
+                    <li>The player picks up a coin, but dies to a Bouncer when moving down.</li>
+                </ul>
+            </div>
+            <div class="col">
+                <img src="die.gif" />
+            </div>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col">
+                <img src="win.gif" />
+            </div>
+            <div class="col">
+                <ul>
+                    <li>Built in C++, with the Curses library to display ascii to the console.</li>
+                    <li>Built as a solo project in December of 2022. I wanted to learn C++, and doing something as close as possible to just pure C++ with no libraries seemed like the way to do it.</li>
+                    <li>I learned a lot about scope from this project. Originally it was going to be much larger, with generated levels and more enemy types, but it took long enough to do just two static levels and three enemies that I had to downsize my expectations significantly.</li>
+                </ul>
+            </div>
+        </div>
+        <hr />
+        <ul>
+            <li>Because it runs in a terminal, I found no easy way to make this playable online. However you are welcome to <a href="https://github.com/sam-eg/chack" target="_blank">browse or download</a> the source code. It includes a CMakeList to CMake an executable.</li>
+        </ul>
+    </body>
+</html>
